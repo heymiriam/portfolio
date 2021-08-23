@@ -11,7 +11,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
-import testImg from '../../assets/testImg.jpeg';
+import YoutubeImg from '../../assets/youtube.png';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -68,7 +68,34 @@ const useStyles = makeStyles((theme) => ({
       marginLeft:'2%',
       color:'black',
   },
-  cards: {
+  card1: {
+ 
+    margin:'20px 10px 0px 10px'  ,
+    //flexGrow: 5,
+    height:'300px',
+    width: '40%',
+    backgroundImage: `url(${YoutubeImg})`,
+   
+  },
+  card2: {
+ 
+    margin:'20px 10px 0px 10px'  ,
+    //flexGrow: 5,
+    height:'300px',
+    width: '40%',
+    backgroundImage: `url(${testImg})`,
+   
+  },
+  card2: {
+ 
+    margin:'20px 10px 0px 10px'  ,
+    //flexGrow: 5,
+    height:'300px',
+    width: '40%',
+    backgroundImage: `url(${testImg})`,
+   
+  },
+  card4: {
  
     margin:'20px 10px 0px 10px'  ,
     //flexGrow: 5,
@@ -126,16 +153,16 @@ export default function Work() {
         </Tabs>
       </Paper>
       <TabPanel value={value} index={0} className={classes.tabPan}>
-        Item One
+       
         <div className={classes.cardCont}>
-        <Card className={classes.cards}>
+        <Card className={classes.card1}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            Live From Space
+            Youtube
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
+            Clone website
           </Typography>
         </CardContent>
         
@@ -147,27 +174,7 @@ export default function Work() {
       />
     </Card>
 
-    <Card className={classes.cards}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            Live From Space
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
-          </Typography>
-        </CardContent>
-        
-      </div>
-      <CardMedia
-        className={classes.cover}
-        image="/static/images/cards/live-from-space.jpg"
-        title="Live from space album cover"
-      />
-    </Card>
-
-
-    <Card className={classes.cards}>
+    <Card className={classes.card2}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
@@ -187,7 +194,27 @@ export default function Work() {
     </Card>
 
 
-    <Card className={classes.cards}>
+    <Card className={classes.card3}>
+      <div className={classes.details}>
+        <CardContent className={classes.content}>
+          <Typography component="h5" variant="h5">
+            Live From Space
+          </Typography>
+          <Typography variant="subtitle1" color="textSecondary">
+            Mac Miller
+          </Typography>
+        </CardContent>
+        
+      </div>
+      <CardMedia
+        className={classes.cover}
+        image="/static/images/cards/live-from-space.jpg"
+        title="Live from space album cover"
+      />
+    </Card>
+
+
+    <Card className={classes.card4}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
