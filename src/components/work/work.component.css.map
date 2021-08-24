@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACD,KAAK,EAAC,KAAK;EACX,UAAU,EAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,oBAAoB;EAC3C,eAAe,EAAE,IAAI;CACxB;;AAED,AAAA,KAAK,CAAA;EACD,KAAK,EAAC,KAAK;EACX,eAAe,EAAC,IAAI;CACvB",
     "sources": [
         "work.component.scss"
     ],

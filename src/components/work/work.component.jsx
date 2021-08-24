@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from "react-router-dom";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -13,6 +14,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import YoutubeImg from '../../assets/youtube.png';
 import testImg from '../../assets/testImg.jpeg';
+import Cabin from '../../assets/cabin.png';
+import MovieList from '../../assets/movielist.png';
+import Blog from '../../assets/blog.png';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,6 +53,8 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    color:'white',
+    textDecoration:'none',
     marginTop:'20px',  
     flexGrow: 1,
     width: '100%',
@@ -73,36 +79,45 @@ const useStyles = makeStyles((theme) => ({
  
     margin:'20px 10px 0px 10px'  ,
     //flexGrow: 5,
+    color:'white',
     height:'300px',
+    textDecoration:'none',
     width: '40%',
     backgroundImage: `url(${YoutubeImg})`,
+    backgroundSize:"700px",
    
   },
   card2: {
  
     margin:'20px 10px 0px 10px'  ,
     //flexGrow: 5,
+    color:'white',
     height:'300px',
+    textDecoration:'none',
     width: '40%',
-    backgroundImage: `url(${testImg})`,
+    backgroundImage: `url(${MovieList})`,
+    backgroundSize:"700px",
    
   },
-  card2: {
+  card3: {
  
     margin:'20px 10px 0px 10px'  ,
     //flexGrow: 5,
     height:'300px',
     width: '40%',
-    backgroundImage: `url(${testImg})`,
+    backgroundImage: `url(${Blog}), linear-gradient(#eb01a5, #d13531)`,
    
   },
   card4: {
  
     margin:'20px 10px 0px 10px'  ,
     //flexGrow: 5,
+    color:'white',
     height:'300px',
+    textDecoration:'none',
     width: '40%',
-    backgroundImage: `url(${testImg})`,
+    backgroundImage: `url(${Cabin})`,
+    backgroundSize:"700px",
    
   },
  
@@ -114,6 +129,8 @@ const useStyles = makeStyles((theme) => ({
   },
   cardCont:{ 
     display:'flex',
+    textDecoration:'none',
+    color:'white',
     flexDirection:'row',
     justifyContent: 'center',
     flexWrap:'wrap',
@@ -121,6 +138,16 @@ const useStyles = makeStyles((theme) => ({
 },
 tab:{
     color:'black',
+},
+content:{
+display:"flex",
+flexDirection:'column',
+justifyContent: 'flex-end',
+marginTop:"200px",
+},
+txth:{
+  color:'white',
+  textDecoration:'none',
 }
 }));
 
@@ -157,32 +184,30 @@ export default function Work() {
        
         <div className={classes.cardCont}>
         <Card className={classes.card1}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            Youtube
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Clone website
-          </Typography>
-        </CardContent>
-        
-      </div>
-      <CardMedia
-        className={classes.cover}
-        image="/static/images/cards/live-from-space.jpg"
-        title="Live from space album cover"
-      />
+        <a href="https://gallant-heyrovsky-7770ab.netlify.app" target="_blank" className={classes.txth}>
+        <div className={classes.details}>
+          <CardContent className={classes.content}>
+            <Typography component="h5" variant="h5" className={classes.txth}>
+              Youtube
+            </Typography>
+            <Typography variant="subtitle1" className={classes.txth}>
+              Clone website
+            </Typography>
+          </CardContent>
+          
+        </div>
+        </a>
     </Card>
 
     <Card className={classes.card2}>
+      <a href="https://agitated-morse-c28af8.netlify.app/" target="_blank" className={classes.txth}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            Live From Space
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
+          <Typography component="h5" variant="h5" className={classes.txth}>
+            Movie List          
+            </Typography>
+          <Typography variant="subtitle1" color="textSecondary" className={classes.txth}>
+            CRUD Website
           </Typography>
         </CardContent>
         
@@ -192,17 +217,19 @@ export default function Work() {
         image="/static/images/cards/live-from-space.jpg"
         title="Live from space album cover"
       />
+      </a>
     </Card>
 
 
     <Card className={classes.card3}>
+    <a href="https://gallant-heyrovsky-7770ab.netlify.app" target="_blank" className={classes.txth}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            Live From Space
+          <Typography component="h5" variant="h5" className={classes.txth}>
+            Blog
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
+          <Typography variant="subtitle1" color="textSecondary" className={classes.txth}>
+            API Website
           </Typography>
         </CardContent>
         
@@ -212,16 +239,18 @@ export default function Work() {
         image="/static/images/cards/live-from-space.jpg"
         title="Live from space album cover"
       />
+      </a>
     </Card>
 
 
     <Card className={classes.card4}>
+    <a href="https://zen-kowalevski-906525.netlify.app" target="_blank" className={classes.txth}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
+          <Typography component="h5" variant="h5" className={classes.txth}>
             CÄBIN
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
+          <Typography variant="subtitle1" color="textSecondary" className={classes.txth}>
             Perfect Score Website
           </Typography>
         </CardContent>
@@ -232,6 +261,7 @@ export default function Work() {
         image="../"
         title="Live from space album cover"
       />
+      </a>
     </Card>
     </div>
       </TabPanel>
