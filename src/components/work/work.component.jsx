@@ -100,12 +100,14 @@ const useStyles = makeStyles((theme) => ({
    
   },
   card3: {
- 
     margin:'20px 10px 0px 10px'  ,
     //flexGrow: 5,
+    color:'white',
     height:'300px',
+    textDecoration:'none',
     width: '40%',
-    backgroundImage: `url(${Blog}), linear-gradient(#eb01a5, #d13531)`,
+    backgroundImage: `url(${Blog})`,
+    backgroundSize:"700px",
    
   },
   card4: {
