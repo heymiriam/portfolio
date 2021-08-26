@@ -224,7 +224,7 @@ export default function Work() {
 
 
     <Card className={classes.card3}>
-    <a href="https://gallant-heyrovsky-7770ab.netlify.app" target="_blank" className={classes.txth}>
+    <a href="https://stupefied-mclean-6434a3.netlify.app" target="_blank" className={classes.txth}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5" className={classes.txth}>
