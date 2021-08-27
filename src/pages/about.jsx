@@ -19,8 +19,7 @@ function About() {
             
             <div className='textCont'>
                 <h1 className='aboutHeading'>Hi, I'm Miriam!</h1>
-                <p className='text'>I’m a creative Art Director, UX/UI Designer and 
-                    Full-Stack Designer with a passion for design, arts, 
+                <p className='text'>I’m a creative Art Director and UX/UI Designer with a passion for design, arts, 
                     and nature. My curiosity and my insatiable appetite 
                     to continue learning let me become more professional as 
                     possible. </p>

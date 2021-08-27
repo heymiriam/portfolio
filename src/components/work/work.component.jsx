@@ -175,10 +175,10 @@ export default function Work() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
-          <Tab label="Web Dev" {...a11yProps(0)} className={classes.tab}/>
+          {/*<Tab label="Web Dev" {...a11yProps(0)} className={classes.tab}/>
           <Tab label="UX/UI" {...a11yProps(1)} className={classes.tab} />
           <Tab label="Advertising" {...a11yProps(2)} className={classes.tab}/>
-          <Tab label="Graphic Design" {...a11yProps(3)} className={classes.tab} />
+  <Tab label="Graphic Design" {...a11yProps(3)} className={classes.tab} />*/}
       
         </Tabs>
       </Paper>
@@ -267,7 +267,7 @@ export default function Work() {
     </Card>
     </div>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      {/*<TabPanel value={value} index={1}>
         Item Two
       </TabPanel>
       <TabPanel value={value} index={2}>
@@ -284,7 +284,7 @@ export default function Work() {
       </TabPanel>
       <TabPanel value={value} index={6}>
         Item Seven
-      </TabPanel>
+  </TabPanel>*/}
     </Paper>
   );
 }
