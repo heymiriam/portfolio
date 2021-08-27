@@ -36,7 +36,7 @@ function NavBar() {
           
           <Link to='/' className='logoLink'><img className="logo" src={logo} alt="Logo"/></Link>
           <div>
-              <div className="toggle-container">
+             { /*<div className="toggle-container">
                 <p>Light</p>
                 <Switch
                 checked={state.checkedB}
@@ -45,7 +45,7 @@ function NavBar() {
                 name="checkedB"
                 inputProps={{ 'aria-label': 'primary checkbox' }}/>  
                 <p>Dark</p>
-              </div>
+    </div>*/}
           <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
             <MenuIcon className="hamburger"></MenuIcon>
           </Button>
